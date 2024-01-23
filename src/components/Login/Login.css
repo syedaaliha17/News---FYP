@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&amp;display=swap");
+
+.cards-header:first-child {
+  border-radius: calc(1rem - 1px) calc(1rem - 1px) 0 0;
+}
+
+.card-heading {
+  position: relative;
+  padding: 2rem 2rem;
+  border-bottom: 1px solid rgb(194, 186, 186);
+  background-color: white;
+  box-shadow: 0 0.125rem 0.25rem rgba(128, 128, 128, 0.08);
+  /* z-index: 2; */
+}
+
+.containers {
+  /* background-color: green; */
+  padding: 0px 0px 0px 550px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.cards {
+  position: relative;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: none;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+  border-radius: 1rem;
+}
+
+
+body {
+  font-family: "Poppins" !important;
+}
+
+.texts-primary {
+  color: #111439 !important;
+  font-size: 20px;
+}
+
+.texts-muted {
+  color: #6c757d !important;
+}
+
+.lead {
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+.texts-sm {
+  font-size: 0.7875rem !important;
+}
+
+.submitBtn {
+  color: #111439 !important;
+  text-decoration: underline !important;
+  cursor: pointer;
+}
+
+
+@media (min-width: 1300px) {
+
+  .login-card {
+    margin:0px 0px 0px 0px;
+  }
+}
+
+@media (min-width:300px){
+  .login-card{
+    padding: 200px 10px 10px 10px;
+  }
+}

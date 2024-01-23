@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: white;
+    color: black;
+  }
+  
+  header {
+    background-color: #141b25;
+  }
+  
+  .main-nav {
+    background: #F8F8F9;
+  }
+  
+  .logo {
+    color: #141b25;
+    line-height: 90px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 30px;
+    font-family: "AstroSpace", sans-serif;
+  }
+  
+  .navlinks {
+    list-style: none;
+    float: right;
+    line-height: 90px;
+    margin: 0;
+    padding: 0;
+    color: "black"
+  
+  }
+  
+  .navlinks li {
+    display: inline-block;
+    margin: 0px 20px;
+  }
+  
+  .navlinks li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s linear 0s;
+    text-transform: uppercase;
+  }
+  
+  .navlinks li a:hover {
+    color: #7ebcb9;
+    padding-bottom: 7px;
+    border-bottom: 2px solid #7ebcb9;
+  }
+  
+  .navlinks li button {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s linear 0s;
+    text-transform: uppercase;
+  }
+  
+  .navlinks li button:hover {
+    color: #7ebcb9;
+    padding-bottom: 7px;
+    border-bottom: 2px solid #7ebcb9;
+  }
+  
+  
+  li a.contact {
+    background-color: #00adb5;
+    padding: 9px 20px;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    border-bottom: none;
+  }
+  
+  li a.contact:hover {
+    background-color: #047e85;
+    color: black;
+    border-bottom: none;
+  }
+  
+  #check {
+    display: none;
+  }
+  
+  .menu-btn {
+    font-size: 25px;
+    color: black;
+    float: right;
+    line-height: 90px;
+    margin-right: 40px;
+    display: none;
+    cursor: pointer;
+  }
+  
+  .dropDownProfile {
+    position: absolute;
+    top: 9.5rem;
+    right: 1.5rem;
+    color: black;
+    width: 240px;
+    padding: 15px;
+    border-radius: 15px;
+    background: #F8F8F9;
+    border: 1px solid gray;
+    z-index: 1;
+  }
+  
+  
+  .dropDownProfile::before {
+    position: absolute;
+    top: -1rem;
+    right: 2rem;
+    width: 25px;
+    height: 25px;
+    transform: rotate(45deg);
+    background-color: white;
+    border-left: 1px solid gray;
+    border-top: 1px solid gray;
+  }
+  
+  
+  
+  
+  @media (max-width: 425px) {
+    .main-nav {
+      touch-action: none;
+    }
+  
+    .navlinks {
+      overflow-y: hidden;
+      touch-action: none;
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      text-align: center;
+      transition: all 0.5s;
+      right: -100%;
+      background: #F8F8F9;
+      z-index: 1;
+  
+    }
+  
+    .navlinks li {
+      display: block;
+    }
+  
+    .navlinks li a {
+      font-size: 20px;
+      display: block;
+  
+    }
+  
+    .navlinks li a:hover {
+      border-bottom: none;
+    }
+  
+    .menu-btn {
+      display: block;
+      touch-action: none;
+    }
+  
+    #check:checked~.navlinks {
+      right: 0;
+    }
+  
+    .logo {
+      margin-left: 10px;
+      font-size: 25px;
+    }
+  
+    .menu-btn {
+      font-size: 25px;
+    }
+  
+    .menu-btn:focus {
+      color: black;
+    }
+  
+    .dropDownProfile {
+      top: 7rem;
+      left: 5rem;
+      color: black;
+      z-index: 2;
+    }
+  }

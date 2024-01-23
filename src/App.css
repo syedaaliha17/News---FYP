@@ -1,0 +1,21 @@
+@media screen and (max-width: 400px) {
+  #features {
+    /* padding: 20px; */
+    /* width: 140%; */
+  }
+  #about,
+  #services,
+  #testimonials,
+  #team,
+  #gallery,
+  #image,
+  #contact,
+  #footer {
+    /* width: 140%; */
+  }
+
+  #portfolio {
+    /* width: 140%; */
+  }
+}
+
